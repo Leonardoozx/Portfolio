@@ -37,6 +37,10 @@
             
         }
 
+        .linkb:hover {
+            color: rgb(5, 113, 201);
+        }
+
         .foto {
             border-radius: 100%;
             margin-left: 6em;
@@ -151,7 +155,7 @@
         }
 
         .c {
-            color: blue;
+            color: rgb(62, 62, 255);
         }
 
         .c:hover {
