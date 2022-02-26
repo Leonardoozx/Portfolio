@@ -7,74 +7,174 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+Display:ital,wght@1,100&family=Roboto+Mono:wght@100&family=ZCOOL+QingKe+HuangYou&display=swap');
 
-        body{
-            background-color: rgb(0, 119, 255);
-            color: white;
-            text-align: center;
-        }
-
-        a{
-            letter-spacing: 1px;
-            background-color: rgba(106, 153, 207, 0.11);
-            padding: 100px;
-            padding-block: 8px;
-            text-decoration: none;
-            color: #bdf0fc;
-            border-radius: 10%;
-        }
-        
-        div{
-            text-align: center;
-        }
-        
-        .foto{               
-
-            border-radius: 100%;
-        }
-
-        img{
-            border-radius: 4%;
-        }
-
-        h1{
-            text-align: center;
-            font-family: 'Dancing Script';
-            letter-spacing: 2px;
-            font-size: 36px;
-        }
-
-        #carapicuiba{
-            color: rgb(182, 0, 0);
-        }
-
-        #Description{
-            font-size: 20px;
-            font-family: 'Noto Serif Display' ;
-            font-weight: 1000;
-        }
-
-        h2{
-            font-size: 36px;
+        * {
+            margin: 0;
             font-family: 'ZCOOL QingKe HuangYou', cursive;
         }
 
-        ul{
-            font-size: 16px;
-            font-family: 'Roboto Mono', monospace;
-            letter-spacing: -0.1px;
-            font-weight: 1000;
+        .linka {
+            position: absolute;
+            bottom: 108px;
+            left: 150px;
+            text-decoration: none;
+            font-size: 23px;
+            padding: 15px;
+            color: aqua;
         }
 
-        #principal{
-            color: hsl(239, 95%, 26%);
+        .linka:hover {
+            color: rgb(5, 113, 201);
         }
 
-        .links-internos{
-            line-height: 50px;
+        .linkb {
+            position: absolute;
+            bottom: 108px;
+            left: 345px;
+            text-decoration: none;
+            font-size: 23px;
+            padding: 15px;
+            color: aqua;
+            
         }
 
-        #vmv{
-            line-height: 20px;
-            color: #11a36a;
-            background-color: #11a36a;
+        .foto {
+            border-radius: 100%;
+            margin-left: 6em;
+            position: absolute;
+            top: 50px;
+        }
+
+        .foto:hover {
+            opacity: 90%;
+        }
+
+        .name {
+            position: absolute;
+            left: 15em;
+            top: 90px;
+            color: aqua;
+            font-family: 'Noto Serif Display', serif;
+        }
+
+        .name:hover {
+            opacity: 80%;
+            color: rgb(5, 113, 201);
+        }
+
+        /* encontrei essa imagem no google imagens dps de procurar por uns 25mins */
+        body {
+            background-image: url("https://wallpaperaccess.com/full/3164228.jpg");
+        }
+
+        .description {
+            position: absolute;
+            width: 500px;
+            color: aqua;
+            left: 420px;
+            font-size: 20px;
+            text-align: center;
+            top: 200px;
+        }
+
+        .description:hover {
+            opacity: 80%;
+            color: rgb(5, 113, 201);
+        }
+
+        .habilidades {
+            color: aqua;
+            position: absolute;
+            left: 100px;
+            top: 450px;
+            font-size: 30px;
+
+        }
+
+        .habilidades:hover {
+            color: rgb(5, 113, 201);
+            opacity: 80%;
+        }
+        
+        .absolute {
+            position: absolute;
+            line-height: 35px;
+            top: 530px;
+            left: 72px;
+            font-size: 20px;
+        }
+
+        .habilidades-list {
+            color: aqua;
+        }
+
+        .habilidades-list:hover {
+            color: rgb(5, 113, 201);
+            opacity: 80%;
+        }
+
+        .principal {
+            color: rgb(255, 0, 0);
+        }
+
+        .principal:hover {
+            color: rgb(255, 230, 0);  
+        }
+
+        strong {
+            color: rgb(98, 0, 255);
+        }
+
+/* Queria fazer algo diferente nessas últimas letras, então setei todas elas com cores diferentes umas das outras e ainda fiz elas mudarem de cor ao passar o mouse por cima de cada letra específica*/
+
+        .vqm {
+            position: absolute;
+            bottom: 50px;
+            left: 260px;
+            font-size: 20px;
+        }
+        
+        .a {
+            color: rgb(0, 255, 0);
+            font-size: 27px;
+        }
+
+        .a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .b {
+            color: gold;
+        }
+
+        .b:hover {
+            color: rgb(0, 174, 255);
+        }
+
+        .c {
+            color: blue;
+        }
+
+        .c:hover {
+            color: rgb(140, 0, 255);
+        }
+
+        .d {
+            color: rgb(165, 165, 165);
+        }
+
+        .d:hover {
+            color: rgb(179, 76, 76);
+        }
+
+        .e {
+            color: rgba(0, 255, 179, 0.774);
+            font-size: 25px;
+        }
+
+        .e:hover {
+            color: indigo;
+        }
+
+        span {
+            color: rgb(255, 0, 0);
         }
