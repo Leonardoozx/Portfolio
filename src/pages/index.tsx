@@ -16,7 +16,16 @@ export default function Home() {
       <Header />
       <TypeWriter
         onInit={(typewriter) => {
-        typewriter.typeString('leonardo').start()
+          typewriter
+            .changeDelay(50)
+            .typeString("Hey, what's up?✌️")
+            .pauseFor(1000)
+            .deleteAll(10)
+            .typeString("Welcome to my portfolio!")
+            .pauseFor(1000)
+            .deleteAll(10)
+            .typeString("I'm a FullStack Developer.")
+            .start()
         }}
       />
     </ThemeProvider>
