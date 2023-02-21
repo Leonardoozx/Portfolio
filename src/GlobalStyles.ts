@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 * {
@@ -8,17 +8,16 @@ const GlobalStyles = createGlobalStyle`
   
   /* Box sizing border-box */
   box-sizing: border-box;
+
+  /* letter spacing */
+  letter-spacing: 0.7px;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  color: #edf6f9;
 }
 
 /* Remove list styles */
@@ -36,6 +35,7 @@ a {
 body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #23263a;
 }
 
 /* Clear floating elements */
