@@ -1,6 +1,16 @@
+import Header from '@/components/Header';
 import GlobalStyles from '@/GlobalStyles';
 import type { AppProps } from 'next/app'
 import Head from "next/head"
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+  colorPalette: {
+    headerColor: '#212336',
+    // backgroundColor: '#23263a', already set on GlobalStyles
+    primaryColor: '#ff4a57',
+  }
+}
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -11,8 +21,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Header />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
