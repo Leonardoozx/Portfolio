@@ -1,16 +1,17 @@
 import Header from '@/components/Header';
+import AuthProvider from '@/context/AuthProvider';
 import GlobalStyles from '@/GlobalStyles';
-import type { AppProps } from 'next/app'
-import Head from "next/head"
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colorPalette: {
     headerColor: '#212336',
-    // backgroundColor: '#23263a', already set on GlobalStyles
+    backgroundColor: '#23263a' /* already set on GlobalStyles */,
     primaryColor: '#ff4a57',
-  }
-}
+  },
+};
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -22,10 +23,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Header />
-        <Component {...pageProps} />
+        <AuthProvider>
+          <GlobalStyles />
+          <Header />
+          <Component {...pageProps} />
+        </AuthProvider>
       </ThemeProvider>
     </>
-  )
+  );
 }
