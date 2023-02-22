@@ -6,8 +6,8 @@ export default function AuthProvider({ children }: IAuthProvider) {
   // open and close the header burguer menu
   const [isBurguerMenuOpen, setIsBurguerMenuOpen] = useState(false);
 
-  const setBurguerMenuStatus = (): void =>
-    setIsBurguerMenuOpen(!isBurguerMenuOpen);
+  const setBurguerMenuStatus = (openOrClose: boolean): void =>
+    setIsBurguerMenuOpen(openOrClose);
 
   const value: IAuthContext = {
     burguerMenu: {

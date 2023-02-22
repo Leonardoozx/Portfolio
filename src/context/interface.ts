@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export interface IAuthContext {
   burguerMenu: {
     isOpen: boolean;
-    setBurguerMenuStatus: () => void;
+    setBurguerMenuStatus: (openOrClose: boolean) => void;
   };
 }
 
