@@ -33,6 +33,7 @@ a {
 
 /* Set default font size and family */
 body {
+  height: 100vh;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #23263a;
