@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import AuthProvider from '@/context/AuthProvider';
 import GlobalStyles from '@/GlobalStyles';
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <GlobalStyles />
           <Header />
           <Component {...pageProps} />
+          <Footer />
         </AuthProvider>
       </ThemeProvider>
     </>
