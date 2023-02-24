@@ -5,6 +5,7 @@ interface ITypeWriterEffect {
   cursor?: string;
   delay?: number | 'natural';
   loop?: boolean;
+  deleteSpeed?: number | 'natural';
 }
 
 export default function TypeWriterEffect({
@@ -12,10 +13,12 @@ export default function TypeWriterEffect({
   cursor = '',
   delay = 70,
   loop = false,
+  deleteSpeed = 'natural',
 }: ITypeWriterEffect) {
   return (
     <TypeWriter
       options={{
+        deleteSpeed,
         cursor,
         autoStart: true,
         strings,
