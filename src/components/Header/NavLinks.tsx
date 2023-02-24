@@ -11,6 +11,9 @@ export default function NavLinks() {
         <TypeWriterEffect strings={'About'} />
       </a>
       <a className="header-links" href="#">
+        <TypeWriterEffect strings={'Skills'} />
+      </a>
+      <a className="header-links" href="#">
         <TypeWriterEffect strings={'Projects'} />
       </a>
     </StyledNavLinks>
