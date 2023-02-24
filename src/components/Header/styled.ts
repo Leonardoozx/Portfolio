@@ -63,7 +63,7 @@ export const StyledNavLinks = styled.div`
   height: 30%;
   gap: 5px;
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 800px) {
     height: 100%;
     justify-content: space-around;
     flex-direction: row;
